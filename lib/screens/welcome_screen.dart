@@ -12,6 +12,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
     with SingleTickerProviderStateMixin {
   AnimationController? controller;
   Animation? animation;
+  Animation? animation2;
 
   @override
   void initState() {
@@ -21,8 +22,22 @@ class _WelcomeScreenState extends State<WelcomeScreen>
       vsync: this,
       duration: Duration(seconds: 1),
     );
-    animation = CurvedAnimation(parent: controller!, curve: Curves.easeIn);
+
+    animation = CurvedAnimation(parent: controller!, curve: Curves.easeInOut);
+    animation2 =
+        ColorTween(begin: Colors.blue, end: Colors.red).animate(controller!);
+
     controller!.forward();
+
+    // controller!.reverse(from: 1);
+    // animation!.addStatusListener((status) {
+    //   if (status == AnimationStatus.completed) {
+    //     controller!.reverse(from: 1);
+    //   } else if (status == AnimationStatus.dismissed) {
+    //     controller!.forward();
+    //   }
+    // });
+
     controller!.addListener(() {
       setState(() {});
       print(animation!.value);
@@ -30,9 +45,15 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   }
 
   @override
+  void dispose() {
+    controller!.dispose();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.red,
+      backgroundColor:animation2!.value,
       body: Padding(
         padding: EdgeInsets.symmetric(horizontal: 24.0),
         child: Column(
@@ -45,7 +66,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                   tag: 'logo',
                   child: Container(
                     child: Image.asset('images/logo.png'),
-                    height: animation!.value * 100,
+                    height: 60.0,
                   ),
                 ),
                 Text(
