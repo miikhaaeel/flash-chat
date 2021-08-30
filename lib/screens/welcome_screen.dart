@@ -20,12 +20,12 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
     controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: Duration(seconds: 2),
     );
 
     animation = CurvedAnimation(parent: controller!, curve: Curves.easeInOut);
     animation2 =
-        ColorTween(begin: Colors.blue, end: Colors.red).animate(controller!);
+        ColorTween(begin: Colors.yellow, end: Colors.red).animate(controller!);
 
     controller!.forward();
 
