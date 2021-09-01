@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "214437326249",
+    "project_id": "flash-chat-276c9",
+    "storage_bucket": "flash-chat-276c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:214437326249:android:ef3ced74984b2c3dd8a8b8",
+        "android_client_info": {
+          "package_name": "com.proximo.flash_chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "214437326249-9s7phu6g7naf58n37l6k2jum4rnsduui.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRKCb_QHHbpxJJNxWsM8d-g2s8c4EvD0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "214437326249-9s7phu6g7naf58n37l6k2jum4rnsduui.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
