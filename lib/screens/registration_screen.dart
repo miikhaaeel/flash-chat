@@ -74,14 +74,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     email: email!,
                     password: password!,
                   );
-                  if (newUser != null) {
-                    Navigator.pushNamed(context, ChatScreen.id);
-                  }
+
+                  Navigator.pushNamed(context, ChatScreen.id);
                 } catch (e) {
                   print(e);
                 }
-
-                ;
               },
             )
           ],
