@@ -20,7 +20,7 @@ A simple Flutter chat application.
 
 - [x] Text Animation.
 - [x] User registration.
-- [x] User authentication.
+- [x] Firebase User authentication.
 - [x] cloud firestore
 
 
