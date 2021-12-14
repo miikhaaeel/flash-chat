@@ -3,7 +3,7 @@
 
 A simple Flutter chat application. 
 
-<a href="http://www.firebase.com/"><img src="[ss/logo_feedbooks.png](https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png)" width="200"/></a>
+<a href="http://www.firebase.com/"><img src="[ss/firebase_logo.png](https://seeklogo.com/images/F/firebase-logo-402F407EE0-seeklogo.com.png)" width="200"/></a>
 <br>
 
 [Firebase](http://www.firebase.com) was used to authenticate user. <br>
