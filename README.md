@@ -1,4 +1,4 @@
-# 📖FlashChat  [![Twitter Follow](https://img.shields.io/twitter/follow/Mikhael.svg?style=social)](https://twitter.com/mii_khael)
+# FlashChat  [![Twitter Follow](https://img.shields.io/twitter/follow/Mikhael.svg?style=social)](https://twitter.com/mii_khael)
 
 
 A simple Flutter chat application. 
